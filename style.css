@@ -553,19 +553,18 @@ section {
   transform: translate(4px, -4px);
 }
 
-/* Featured project (Project 3) */
+/* Featured project (Project 3) — same as others, no orange border */
 .project-item.featured {
-  background: linear-gradient(135deg, rgba(251,146,60,0.05), rgba(10,10,15,1));
-  border-left: 2px solid var(--accent3);
+  background: var(--bg2);
 }
 
 .project-item.featured:hover {
-  background: linear-gradient(135deg, rgba(251,146,60,0.1), var(--surface));
+  background: var(--surface);
 }
 
 .project-highlight {
-  background: linear-gradient(135deg, rgba(251,146,60,0.08), rgba(167,139,250,0.05));
-  border: 1px solid rgba(251,146,60,0.15);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 20px;
   margin-top: 16px;
@@ -574,7 +573,7 @@ section {
 .project-highlight-title {
   font-family: 'DM Mono', monospace;
   font-size: 10px;
-  color: var(--accent3);
+  color: var(--accent);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -597,7 +596,7 @@ section {
 
 .feature-list li::before {
   content: '→';
-  color: var(--accent3);
+  color: var(--accent);
   font-size: 12px;
   flex-shrink: 0;
   margin-top: 1px;
